@@ -82,3 +82,7 @@ p.center{
     background-color: #ecbd82;
     border: 10px solid #ce9a5b;
 }
+
+article.Cheesecakes{
+    border: 1px dotted black;
+}
