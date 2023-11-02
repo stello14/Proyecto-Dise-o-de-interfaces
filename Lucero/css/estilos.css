@@ -65,7 +65,7 @@ li a:hover{
     background-color: #e9edc9;
 }
 
-a.Productos{
+a.ChisA{
 
     background-color: transparent;
     
@@ -77,12 +77,19 @@ p.center{
 
 }
 
-.Productos{
+.Menu{
     background: none;
     background-color: #ecbd82;
     border: 10px solid #ce9a5b;
 }
-
+/* Estoy modificando el primer articulo del menu, El Cheesecake */
 article.Cheesecakes{
+    margin-top: 10px ;
+    width: 33%;
+    margin-left: 10px;
     border: 1px dotted black;
+}
+
+.Cheesecake{
+    width: 33%;
 }
