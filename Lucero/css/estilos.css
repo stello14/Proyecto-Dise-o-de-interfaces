@@ -11,14 +11,9 @@ h1,h2,h3{
 p{
     color:#fefae0;
 }
-article.Menu{
-    background-image: none;
-    background-color: white;
-    border: 1px solid;
-}
+
 /*imagen de fondo del inicio*/
 body{
-    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,4 +63,16 @@ li a{
 }
 li a:hover{
     background-color: #e9edc9;
+}
+
+a.Productos{
+
+    background-color: transparent;
+    
+}
+
+p.center{
+    text-align: center;
+
+
 }
