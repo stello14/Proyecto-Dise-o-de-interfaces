@@ -76,3 +76,9 @@ p.center{
 
 
 }
+
+.Productos{
+    background: none;
+    background-color: #ecbd82;
+    border: 10px solid #ce9a5b;
+}
