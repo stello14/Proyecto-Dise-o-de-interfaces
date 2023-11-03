@@ -4,55 +4,349 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <link href="css\Styles.css" rel="stylesheet"/>
+    <style>
+            /*====================================================================*/
+            body{
+                margin: 0;
+            padding: 0;
+            background-size: cover;
+            padding: 15px;
+            height: 250px;
+            }
+
+            /*====================================================================*/
+
+            h1,h2{
+            color:#545454;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            }
+
+            h3{
+
+            color:#6b6b6b;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+
+            }
+            /*====================================================================*/
+
+            .Menu{  
+
+            width: 1000px;
+            display:flex;
+            flex-direction:row;
+
+
+            background-color: #ecbd82;
+
+            border: 10px solid #ce9a5b;
+            border-radius: 20px;
+
+            margin: 0 auto;
+            padding: 20px;
+            align-items: center;
+            
+
+            }
+
+            .Menu2{
+
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+
+
+            background-color: #e9edc9;
+            border: 10px solid #ccd5ae;
+
+            border-radius: 20px;
+            padding: 20px;
+
+            margin: 0 auto;
+            align-items: center;
+            
+            }
+
+            /*====================================================================*/
+
+
+            article.Cheesecakes{
+            height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+            
+            
+            margin: 0  auto 20px;
+
+
+            }
+   
+            article.Macarons{
+        
+                height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+
+
+            margin: 0 0 auto 20px;
+            }
+
+            article.Cupcakes{
+       
+                height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+
+
+            
+            margin: 0 0 auto 20px;
+            }
+
+            article.Tortas{
+                height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+
+
+          
+            margin: 0 0 auto 20px;
+            }
+
+            article.Macarons{
+                height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+
+
+        
+            margin: 0 0 auto 20px;
+            }
+
+            article.Tartaletas{
+        
+          
+                height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+
+
+          
+            margin: 0 0 auto 20px;
+            }
+            
+            article.Dulces{
+
+        
+                height: 400px;
+            border:solid 1px #545454;
+            justify-items: center;
+            text-align: center;
+
+
+         
+            margin: 0 0 auto 20px;
+            }
+            /*====================================================================*/
+
+
+
+            .Cheesecake{    
+            width:150px;
+            height: 200px;
+
+
+            border: #e4b06f solid 5px;
+
+            margin-right: 20px;
+            margin-left: 20px ;
+
+            }
+
+            .Macaron{
+            width:250px;
+            height: 200px;
+
+
+            border: #e4b06f solid 5px;
+
+            margin-right: 20px;
+            margin-left: 20px ;
+
+             }
+
+            .Cupcake{
+           
+                width:150px;
+            height: 200px;
+
+
+            border: #e4b06f solid 5px;
+
+            margin-right: 20px;
+            margin-left: 20px ;
+            }
+
+            .Dulce{
+                width:150px;
+            height: 200px;
+
+
+            border: #ccd5ae solid 5px;
+
+            margin-right: 20px;
+            margin-left: 20px ;
+            }
+
+            
+            .Tartaleta{
+         
+                width:150px;
+            height: 200px;
+
+            border: #ccd5ae solid 5px;
+
+            margin-right: 20px;
+            margin-left: 20px ;
+            }
+
+            .Torta{
+            
+                width:150px;
+            height: 200px;
+
+
+            border: #ccd5ae solid 5px;
+
+            margin-right: 20px;
+            margin-left: 20px ;
+
+            }
+            /*====================================================================*/
+
+
+
+
+            a.ChisA{
+
+            background-color: transparent;
+            text-align: center;
+
+            }
+
+            a.MacA{
+
+            background-color: transparent;
+            text-align: center;
+
+            }
+            a.TorA{
+
+            background-color: transparent;
+            text-align: center;
+
+            }
+            a.TarA{
+
+            background-color: transparent;
+            text-align: center;
+
+            }
+            a.DulA{
+
+            background-color: transparent;
+            text-align: center;
+
+            }
+            a.CupA{
+
+            background-color: transparent;
+            text-align: center;
+
+            }
+            /*====================================================================*/
+
+
+
+
+    </style>
+
+
 </head>
-<body background="IMG\Background4.jpg" >
 
-    <!--Titulo-->
+
+<body bgcolor="#faedcd">
+
+  
     <h1>PRODUCTOS</h1>
+    <br>
+   
 
-    <!--Texto-->
+    <div class="Menu">
 
-    <article class="Menu">
+
         <article class="Cheesecakes">
-            <h2 style="color: #ba9067">CHEESECAKES</h2>
+            <h2>Cheesecakes</h2>
             <a  class="ChisA" href="CheeseCake.html"> <img class="Cheesecake" src="IMG/cheesecake.png" alt="logo Cheesecakes"/></a>
-            <p class = "center" >Cheesecakes tipo new york, japones y colombiano. </p>
+            <h3>Cheesecakes tipo new york, japones y colombiano.</h3>
         </article>
+
+
         <article class="Macarons">
-            <h2 style="color: #ba9067">Macarons</h2>
+            <h2>Macarons</h2>
             <a  class="MacA" href="Macarons.html"> <img class="Macaron" src="IMG/Macarons.png" alt="logo Macarons"/></a>
-            <p class = "center" >Galleta francesa hecha a base de almendra. </p>
+            <h3>Galleta francesa hecha a base de almendra.</h3>
         </article>
+
+
         <article class="Cupcakes">
-            <h2 style="color: #ba9067">Cupcakes</h2>
+            <h2>Cupcakes</h2>
             <a  class="CupA" href="Cupcakes.html"> <img class="Cupcake" src="IMG/Cupcackes.png" alt="logo Cupcakes"/></a>
-            <p class = "center" >bizcochos esponjosos con buttercream.  </p>
+            <h3>bizcochos esponjosos con buttercream.</h3>
         </article>
         
        
-    </article>
+    </div>
 
-    <article class="Menu2">
+    <br>
+    <br>
+    <br>
+    
+
+
+    <div class="Menu2">
         <article class="Tortas">
-            <h2 style="color: #533d78">Tortas</h2>
-            <a  class="TorA" href="1.html"> <img class="Torta" src="imagenes/tortas.jpeg" alt="logo Cheesecakes"/></a>
-            <p class = "center" >Bizcochuelos esponjosos de diferentes sabores. </p>
+            <h2>Tortas</h2>
+            <a  class="TorA" href="Tortas.html"> <img class="Torta" src="IMG/tortas.jpeg" alt="logo Tortas"/></a>
+            <h3>Bizcochuelos esponjosos de diferentes sabores. </h3>
         </article>
         <article class="Tartaletas">
-            <h2 style="color: #533d78">Tartaletas</h2>
-            <a  class="TarA" href="1.html"> <img class="Tartaleta" src="imagenes/tartaletas.jpeg" alt="logo Cheesecakes"/></a>
-            <p class = "center" >Masas quebradas con rellenos cremosos y merengue. </p>
+            <h2 >Tartaletas</h2>
+            <a  class="TarA" href="Tartaletas.html"> <img class="Tartaleta" src="IMG/tartaletas.jpeg" alt="logo Tartaletas"/></a>
+            <h3>Masas quebradas con rellenos cremosos y merengue. </h3>
         </article>
         <article class="Dulces">
-            <h2 style="color: #533d78">Dulces</h2>
-            <a  class="DulA" href="1.html"> <img class="Dulce" src="imagenes/cup cackes.jpeg" alt="logo Cheesecakes"/></a>
-            <p class = "center" >masmelos, dulces, caramelos masticables y gomitas  </p>
+            <h2>Dulces</h2>
+            <a  class="DulA" href="Dulces.html"> <img class="Dulce" src="IMG\dulces.jpeg" alt="logo Dulces"/></a>
+            <h3>masmelos, dulces, caramelos masticables y gomitas  </h3>
         </article>
         
        
-    </article>
+    </div>
+
+
+
 
 </body>
 
+
+<br>
+<br>
+<br>
 </html>
