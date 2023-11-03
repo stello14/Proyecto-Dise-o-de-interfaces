@@ -84,6 +84,13 @@ p.center{
     background-color: #ecbd82;
     border: 10px solid #ce9a5b;
 }
+
+.Menu2{
+    display: flex;
+    background: none;
+    background-color: #9978d1;
+    border: 10px solid #66508b;
+}
 /* Estoy modificando el primer articulo del menu, El Cheesecake */
 article.Cheesecakes{
     margin-top: 10px ;
@@ -103,32 +110,32 @@ article.Cheesecakes{
     margin-right: 50px;
 }
 /* Macarons */
-article.Macarons{
-    margin-top: 10px ;
-    width: 30%;
-    
-    position:sticky;
-    margin-left: 50px;
-    border: 3px dotted #9c7b52;
-    text-align: center;
-}
+    article.Macarons{
+        margin-top: 10px ;
+        width: 30%;
+        
+        position:sticky;
+        margin-left: 50px;
+        border: 3px dotted #9c7b52;
+        text-align: center;
+    }
 
-.Macaron{
-    text-align: center;
-    
-    width:350px;
-    height: 400px;
-    border: #e4b06f solid 5px;
-    margin-right: 50px;
-}
-a.MacA{
+    .Macaron{
+        text-align: center;
+        
+        width:350px;
+        height: 400px;
+        border: #e4b06f solid 5px;
+        margin-right: 50px;
+    }
+    a.MacA{
 
-    background-color: transparent;
-    text-align: center;
-    
+        background-color: transparent;
+        text-align: center;
+        
 
 
-}
+    }
 
 /*Cupcakes*/
 article.Cupcakes{
@@ -150,6 +157,94 @@ article.Cupcakes{
     margin-right: 50px;
 }
 a.CupA{
+
+    background-color: transparent;
+    text-align: center;
+    
+}
+
+/* Tortas */
+article.Tortas{
+    margin-top: 10px ;
+    width: 30%;
+    
+    margin-left: 10px;
+    border: 3px dotted #9c7b52;
+    justify-items: center;
+}
+
+.Torta{
+    text-align: center;
+    
+    width:350px;
+    height: 400px;
+    border: #e4b06f solid 5px;
+    margin-right: 50px;
+}
+a.TorA{
+
+    background-color: transparent;
+    text-align: center;
+    
+}
+/* Macarons */
+article.Macarons{
+    margin-top: 10px ;
+    width: 30%;
+    
+    position:sticky;
+    margin-left: 50px;
+    border: 3px dotted #9c7b52;
+    text-align: center;
+}
+/* Tartaletas */
+
+article.Tartaletas{
+    margin-top: 10px ;
+    width: 30%;
+    position:sticky;
+    margin-left: 50px;
+    margin-right: 0px;
+    border: 3px dotted #9c7b52;
+    text-align: center;
+}
+
+.Tartaleta{
+    text-align: center;
+    
+    width:350px;
+    height: 400px;
+    border: #e4b06f solid 5px;
+    margin-right: 50px;
+}
+a.TarA{
+
+    background-color: transparent;
+    text-align: center;
+    
+}
+
+/* Dulces */
+
+article.Dulces{
+    margin-top: 10px ;
+    width: 30%;
+    position:sticky;
+    margin-left: 50px;
+    margin-right: 0px;
+    border: 3px dotted #9c7b52;
+    text-align: center;
+}
+
+.Dulce{
+    text-align: center;
+    
+    width:350px;
+    height: 400px;
+    border: #e4b06f solid 5px;
+    margin-right: 50px;
+}
+a.DulA{
 
     background-color: transparent;
     text-align: center;
