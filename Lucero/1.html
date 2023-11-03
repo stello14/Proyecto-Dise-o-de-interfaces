@@ -1,47 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css\Styles.css" rel="stylesheet"/>
+    <title>Documento</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('IMG/Background4.jpg');
+            background-size: cover;
+        }
+
+        .Menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e9edc9;
+            border: 10px solid #ccd5ae;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #d4a373;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+      
+                table, th, td {
+                text-align: center;
+            margin: 0 auto 20px;
+        border: 1px solid #e9edc9;
+        border-collapse: collapse;
+        }
+        td {
+        background-color: #fefae0;
+        }
+        th{
+            background-color: #d4a373;
+        }
+
+            .CheesecakePag2 {
+        width: 350px;
+        height: 400px;
+        border: #d4a373 solid 3px;
+        margin: 0 0 20px 20px; 
+        float: right; 
+         }
+
+        p {
+            color: #fefae0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            margin: 0 20px 20px;
+            padding: 20px;
+        }
+
+      
+        .ultimaSeccion {
+            background-color: #d4a373; 
+            
+        }
+
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+ 
+        .TablaNutri {
+            width: 80%; 
+            margin: 0 auto 20px; 
+        }
+
+      
+        .TablaNutri th,
+        .TablaNutri td {
+            padding: 10px; 
+            width: 33%; 
+        }
+
+    </style>
 </head>
 
+<body>
 
-<body background="IMG\Background4.jpg">
+    <div class="Menu">
+        <h1>Cheesecake Nueva York</h1>
 
+        <article>
+            <table class="TablaNutri">
+                <tr>
+                    <th>Ingredientes</th>
+                    <th>Unidad de medida</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>Queso philadelphia</td>
+                    <td>Gramos</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Azucar</td>
+                    <td>Gramos</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Crema de leche</td>
+                    <td>Gramos</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Huevos</td>
+                    <td>Unidad</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Almidon</td>
+                    <td>Gramos</td>
+                    <td>10</td>
+                </tr>
+            </table>
 
-    <article class="ProductoPag2">
-        <h1>Cheesecake New York</h1>
+            <img class="CheesecakePag2" src="IMG/cheesecake.jpeg" alt="logo Cheesecakes" />
+        </article>
 
-        <img class="CheesecakePag2" src="IMG/cheesecake.jpeg" alt="logo Cheesecakes"/></a>
-
-        <table class="TablaNutri">
-            <tr>
-
-                <th>Ingredientes</th>
-
-            </tr>
-
-            <tr>
         
-            <td>Crema de leche</td>
-            <td>Celda 2</td>
-            <td>Celda 3</td>
-        
-            </tr>
-        
-            <tr>
-        
-            <td>Gramos</td>
-            <td>Celda 5</td>
-            <td>Celda 6</td>
-        
-            </tr>
-        
-        </table>
-    </article>
-    
+        <p class="ultimaSeccion">
+            Incorporar todos los ingredientes con el queso crema a punto de pomada. Tamizar la maizena y mezclar. Hornear a 140 grados durante 1 hora. Dejar enfriar en el horno por 1 hora. Refrigerar por 24 horas. 
+            Para la mermelada dejar las frutas macerando con el 50% del azúcar. Llevar al fuego hasta que alcance los 100 grados.
+            </p>
+
+        <h2>precio: 60mil x 8 porciones</h2>
+    </div>
+
 </body>
 </html>
