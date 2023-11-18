@@ -68,7 +68,7 @@
 
       
         a:hover, a:active{
-        background-color: #e9edc9;
+        background-color: #ccd5ae;
         }
 
         a.PedirA{ 
@@ -85,31 +85,36 @@
         /*==================================================================*/   
 
 
-        ul{
-        list-style-type: none;
-        overflow: hidden;
-
-
-        margin: 0 auto;
-        padding: 0;
-
-
-        border-radius: 20px;
-
-
-
-        display: flex;
-        justify-content: center;
-        
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            border-radius: 20px;
+            background-color: #ccd5ae; 
+            display: flex;
+            justify-content: center; 
         }
 
         li {
-            float: left;
-            border-right: 1px solid #252422; 
+            display: inline; 
+            margin: 0 10px; 
         }
 
         li:last-child {
-            border-right: none; 
+            margin-right: 0;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #e9edc9;
         }
 
     </style>
