@@ -5,364 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <style>
-            /*====================================================================*/
-            body{
-                margin: 0;
+        body {
+            margin: 0;
             padding: 0;
             background-size: cover;
             padding: 15px;
             height: 250px;
-            }
+        }
 
-            /*====================================================================*/
-
-            h1,h2{
-            color:#545454;
+        h1, h2 {
+            color: #545454;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: center;
-            }
+        }
 
-            h3{
-
-            color:#6b6b6b;
+        h3 {
+            color: #6b6b6b;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: center;
+        }
 
-            }
-            /*====================================================================*/
-
-            .Menu{  
-
-            width: 1000px;
-            display:flex;
-            flex-direction:row;
-
-
-            background-color: #ecbd82;
-
-            border: 10px solid #ce9a5b;
-            border-radius: 20px;
-
-            margin: 0 auto;
-            padding: 20px;
-            align-items: center;
-            
-
-            }
-
-            .Menu2{
-
+        .Menu {
             width: 1000px;
             display: flex;
             flex-direction: row;
+            background-color: #ecbd82;
+            border: 10px solid #ce9a5b;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 20px;
+            align-items: center;
+        }
 
-
+        .Menu2 {
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
             background-color: #e9edc9;
             border: 10px solid #ccd5ae;
-
             border-radius: 20px;
             padding: 20px;
-
             margin: 0 auto;
             align-items: center;
-            
-            }
+        }
 
-            /*====================================================================*/
-
-
-            article.Cheesecakes{
+        article.Cheesecakes,
+        article.Macarons,
+        article.Cupcakes,
+        article.Tortas,
+        article.Macarons,
+        article.Tartaletas,
+        article.Dulces {
             height: 400px;
-            border:solid 1px #545454;
+            border: solid 1px #545454;
             justify-items: center;
             text-align: center;
-            
-            
-            margin: 0  auto 20px;
+            margin: 0 auto 20px;
+        }
 
-
-            }
-   
-            article.Macarons{
-        
-                height: 400px;
-            border:solid 1px #545454;
-            justify-items: center;
-            text-align: center;
-
-
-            margin: 0 0 auto 20px;
-            }
-
-            article.Cupcakes{
-       
-                height: 400px;
-            border:solid 1px #545454;
-            justify-items: center;
-            text-align: center;
-
-
-            
-            margin: 0 0 auto 20px;
-            }
-
-            article.Tortas{
-                height: 400px;
-            border:solid 1px #545454;
-            justify-items: center;
-            text-align: center;
-
-
-          
-            margin: 0 0 auto 20px;
-            }
-
-            article.Macarons{
-                height: 400px;
-            border:solid 1px #545454;
-            justify-items: center;
-            text-align: center;
-
-
-        
-            margin: 0 0 auto 20px;
-            }
-
-            article.Tartaletas{
-        
-          
-                height: 400px;
-            border:solid 1px #545454;
-            justify-items: center;
-            text-align: center;
-
-
-          
-            margin: 0 0 auto 20px;
-            }
-            
-            article.Dulces{
-
-        
-                height: 400px;
-            border:solid 1px #545454;
-            justify-items: center;
-            text-align: center;
-
-
-         
-            margin: 0 0 auto 20px;
-            }
-            /*====================================================================*/
-
-
-
-            .Cheesecake{    
-            width:150px;
+        .Cheesecake,
+        .Macaron,
+        .Cupcake,
+        .Dulce,
+        .Tartaleta,
+        .Torta {
+            width: 150px;
             height: 200px;
-
-
             border: #e4b06f solid 5px;
-
             margin-right: 20px;
-            margin-left: 20px ;
+            margin-left: 20px;
+        }
 
-            }
+        a.ChisA,
+        a.MacA,
+        a.TorA,
+        a.TarA,
+        a.DulA,
+        a.CupA {
+            background-color: transparent;
+            text-align: center;
+        }
 
-            .Macaron{
-            width:250px;
-            height: 200px;
-
-
-            border: #e4b06f solid 5px;
-
-            margin-right: 20px;
-            margin-left: 20px ;
-
-             }
-
-            .Cupcake{
-           
-                width:150px;
-            height: 200px;
-
-
-            border: #e4b06f solid 5px;
-
-            margin-right: 20px;
-            margin-left: 20px ;
-            }
-
-            .Dulce{
-                width:150px;
-            height: 200px;
-
-
-            border: #ccd5ae solid 5px;
-
-            margin-right: 20px;
-            margin-left: 20px ;
-            }
-
-            
-            .Tartaleta{
-         
-                width:150px;
-            height: 200px;
-
-            border: #ccd5ae solid 5px;
-
-            margin-right: 20px;
-            margin-left: 20px ;
-            }
-
-            .Torta{
-            
-                width:150px;
-            height: 200px;
-
-
-            border: #ccd5ae solid 5px;
-
-            margin-right: 20px;
-            margin-left: 20px ;
-
-            }
-            /*====================================================================*/
-
-
-            a {
+        a {
             text-decoration: none;
-            color: inherit; 
-            transition: color 0.3s ease; 
-            }
-            a:hover {
-                color: #e4b06f;
-            }
+            color: inherit; /* Preserve the text color */
+            transition: color 0.3s ease; /* Add a color transition on link hover */
+        }
 
-            a.ChisA{
-
-            background-color: transparent;
-            text-align: center;
-
-            }
-
-            a.MacA{
-
-            background-color: transparent;
-            text-align: center;
-
-            }
-            a.TorA{
-
-            background-color: transparent;
-            text-align: center;
-
-            }
-            a.TarA{
-
-            background-color: transparent;
-            text-align: center;
-
-            }
-            a.DulA{
-
-            background-color: transparent;
-            text-align: center;
-
-            }
-            a.CupA{
-
-            background-color: transparent;
-            text-align: center;
-
-            }
-            /*====================================================================*/
-
-
-
-
+        a:hover {
+            color: #e4b06f; /* Change the color on hover */
+        }
     </style>
-   <script>
-    function cambiarPagina(destino) {
-        document.body.style.opacity = 0;
-        document.body.style.transition = "opacity 0.5s ease";
+    <script>
+        function cambiarPagina(destino) {
+            document.body.style.opacity = 0;
+            document.body.style.transition = "opacity 0.5s ease";
 
-        setTimeout(function () {
-            window.location.href = destino;
-        }, 500);
-    }
-</script>
-
-
-
+            setTimeout(function () {
+                window.location.href = destino;
+            }, 500);
+        }
+    </script>
 </head>
-
-
 <body bgcolor="#faedcd">
 
-  
-    <h1 style="margin: 0 auto;">PRODUCTOS</h1>
-    <br>
-   
+<h1 style="margin: 0 auto;">PRODUCTOS</h1>
+<br>
 
-    <div class="Menu">
+<div class="Menu">
+    <article class="Cheesecakes">
+        <h2>Cheesecakes</h2>
+        <a class="ChisA" href="javascript:void(0);" onclick="cambiarPagina('CheeseCake.html');">
+            <img class="Cheesecake" src="IMG/cheesecake.png" alt="logo Cheesecakes"/>
+        </a>
+        <h3>Cheesecakes tipo new york.</h3>
+    </article>
 
+    <article class="Macarons">
+        <h2>Macarons</h2>
+        <a class="MacA" href="javascript:void(0);" onclick="cambiarPagina('Macarons.html');">
+            <img class="Macaron" src="IMG/macarons nuevo.jpeg" alt="logo Macarons"/>
+        </a>
+        <h3>Galleta francesa.</h3>
+    </article>
 
-        <article class="Cheesecakes">
-            <h2>Cheesecakes</h2>
-            <a  class="ChisA" href="CheeseCake.html"> <img class="Cheesecake" src="IMG/cheesecake.png" alt="logo Cheesecakes"/></a>
-            <h3>Cheesecakes tipo new york.</h3>
-        </article>
+    <article class="Cupcakes">
+        <h2>Cupcakes</h2>
+        <a class="CupA" href="javascript:void(0);" onclick="cambiarPagina('Cupcakes.html');">
+            <img class="Cupcake" src="IMG/Cupcackes.png" alt="logo Cupcakes"/>
+        </a>
+        <h3>Bizcochos esponjosos con buttercream.</h3>
+    </article>
+</div>
 
+<br>
+<br>
+<br>
 
-        <article class="Macarons">
-            <h2>Macarons</h2>
-            <a  class="MacA" href="Macarons.html"> <img class="Macaron" src="IMG/macarons nuevo.jpeg" alt="logo Macarons"/></a>
-            <h3>Galleta francesa.</h3>
-        </article>
+<div class="Menu2">
+    <article class="Tortas">
+        <h2>Tortas artesanales</h2>
+        <a class="TorA" href="javascript:void(0);" onclick="cambiarPagina('Tortas.html');">
+            <img class="Torta" src="IMG/tortanueva.jpeg" alt="logo Tortas"/>
+        </a>
+        <h3>Bizcochuelos de diferentes sabores. </h3>
+    </article>
 
+    <article class="Tartaletas">
+        <h2 >Tartaletas</h2>
+        <a class="TarA" href="javascript:void(0);" onclick="cambiarPagina('Tartaletas.html');">
+            <img class="Tartaleta" src="IMG/tartaletas.jpeg" alt="logo Tartaletas"/>
+        </a>
+        <h3>Masas quebradas con rellenos cremosos y merengue. </h3>
+    </article>
 
-        <article class="Cupcakes">
-            <h2>Cupcakes</h2>
-            <a  class="CupA" href="Cupcakes.html"> <img class="Cupcake" src="IMG/Cupcackes.png" alt="logo Cupcakes"/></a>
-            <h3>Bizcochos esponjosos con buttercream.</h3>
-        </article>
-        
-       
-    </div>
-
-    <br>
-    <br>
-    <br>
-    
-
-
-    <div class="Menu2">
-        <article class="Tortas">
-            <h2>Tortas artesanales</h2>
-            <a  class="TorA" href="Tortas.html"> <img class="Torta" src="IMG/tortanueva.jpeg" alt="logo Tortas"/></a>
-            <h3>Bizcochuelos de diferentes sabores. </h3>
-        </article>
-        <article class="Tartaletas">
-            <h2 >Tartaletas</h2>
-            <a  class="TarA" href="Tartaletas.html"> <img class="Tartaleta" src="IMG/tartaletas.jpeg" alt="logo Tartaletas"/></a>
-            <h3>Masas quebradas con rellenos cremosos y merengue. </h3>
-        </article>
-        <article class="Dulces">
-            <h2>Dulces</h2>
-            <a  class="DulA" href="Dulces.html"> <img class="Dulce" src="IMG\dulces.jpeg" alt="logo Dulces"/></a>
-            <h3>Brigadeiros, dulce de Brasil.  </h3>
-        </article>
-        
-       
-    </div>
-
-
-
+    <article class="Dulces">
+        <h2>Dulces</h2>
+        <a class="DulA" href="javascript:void(0);" onclick="cambiarPagina('Dulces.html');">
+            <img class="Dulce" src="IMG\dulces.jpeg" alt="logo Dulces"/>
+        </a>
+        <h3>Brigadeiros, dulce de Brasil.  </h3>
+    </article>
+</div>
 
 </body>
-
 
 <br>
 <br>
