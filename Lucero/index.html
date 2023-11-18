@@ -15,6 +15,7 @@
         background-attachment: fixed;
         padding: 25px;
         height: 150px;
+        transition: opacity 0.5s ease;
         }
 
 
@@ -112,15 +113,25 @@
         }
 
     </style>
+
+    <script>
+        function cambiarPagina(destino) {
+            document.body.style.opacity = 0;
+            setTimeout(function () {
+                window.location.href = destino;
+            }, 500); 
+        }
+    </script>
+
 </head>
 
 <body background="IMG\Background4.png">
     <ul>
-        <li><a href="index.html"  class="aa">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contactos.html">Contactanos</a></li>
-        <li><a  href="conocenos.html" class="aaa">Conocenos</a></li>
+        <li><a href="javascript:void(0);" onclick="cambiarPagina('productos.html')">Productos</a></li>
+        <li><a href="javascript:void(0);" onclick="cambiarPagina('contactos.html')">Contactanos</a></li>
+        <li><a href="javascript:void(0);" onclick="cambiarPagina('conocenos.html')" class="aaa">Conocenos</a></li>
     </ul>
+    
 
     <h1>LUCERO</h1>
     <h2>PASTELERIA FRANCESA</h2>
